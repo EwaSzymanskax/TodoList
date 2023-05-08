@@ -1,8 +1,10 @@
+import style from "./TodoItem.module.css";
+
 const TodoItem:React.FC<{
     text: string; 
 }>
 =(props)=>{
-return <li>{props.text}</li>
+return <li className={style.item}>{props.text}</li>
 
 }
 
